@@ -9,8 +9,8 @@ else
 	yum install -y git
 fi
 
-echo 'Please enter your GitHub password :'
 user='nbauma109'
+echo 'Please enter your GitHub password :'
 read -s pass
 
 git clone https://$user:$pass@github.com/$user/ibc
