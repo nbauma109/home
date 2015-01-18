@@ -12,7 +12,7 @@ fi
 git clone https://github.com/nbauma109/ibc
 git clone https://github.com/nbauma109/r2d2
 
-pushd ib-controller
+pushd ibc
 ./install.sh
 popd
 
