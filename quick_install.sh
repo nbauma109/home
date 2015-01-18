@@ -9,8 +9,8 @@ else
 	yum install -y git
 fi
 
-git clone https://github.com/nbauma109/ibc
-git clone https://github.com/nbauma109/r2d2
+git clone https://nbauma109@github.com/nbauma109/ibc
+git clone https://nbauma109@github.com/nbauma109/r2d2
 
 pushd ibc
 ./install.sh
