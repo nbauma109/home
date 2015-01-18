@@ -9,7 +9,7 @@ else
 	yum install -y git
 fi
 
-user='nbauma109'
+user=$1
 echo 'Please enter your GitHub password :'
 read -s pass
 
