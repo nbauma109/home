@@ -16,7 +16,6 @@ user=$1
 git clone https://$user@github.com/$user/ibc
 git clone https://$user@github.com/$user/r2d2
 git clone https://$user@github.com/$user/idsrd
-git clone https://$user@github.com/$user/idsrdlst
 
 pushd ibc
 ./install.sh
