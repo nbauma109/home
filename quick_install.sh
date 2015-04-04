@@ -9,6 +9,9 @@ else
 	yum install -y git
 fi
 
+git config --global credential.helper cache
+git config --global credential.helper 'cache --timeout=3600'
+
 user=$1
 
 git clone https://$user@github.com/$user/ibc
