@@ -28,3 +28,6 @@ pushd idsrd
 ./install.sh
 popd
 
+cat r2d2/r2d2.cron idsrd/idsrd.cron | crontab
+
+
