@@ -9,7 +9,7 @@ else
 	yum install -y git
 fi
 
-git config --global credential.helper store --file ~/.my-credentials
+git config --global credential.helper store --file
 
 user=$1
 
