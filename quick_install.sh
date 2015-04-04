@@ -9,8 +9,7 @@ else
 	yum install -y git
 fi
 
-git config --global credential.helper cache
-git config --global credential.helper 'cache --timeout=3600'
+git config --global credential.helper store --file ~/.my-credentials
 
 user=$1
 
