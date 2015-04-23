@@ -17,6 +17,8 @@ git clone https://$user@github.com/$user/ibc
 git clone https://$user@github.com/$user/r2d2
 git clone https://$user@github.com/$user/idsrd
 
+mkdir -p ~/Downloads
+
 pushd ibc
 ./install.sh
 popd
