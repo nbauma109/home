@@ -33,4 +33,4 @@ popd
 
 cat r2d2/r2d2.cron idsrd/idsrd.cron | crontab
 
-mount -t tmpfs -o mode=1755 tmpfs /run
+
