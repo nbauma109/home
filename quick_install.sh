@@ -10,6 +10,7 @@ else
 fi
 
 git config --global credential.helper store --file
+git config --global push.default matching
 
 user=$1
 
