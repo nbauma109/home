@@ -3,10 +3,10 @@
 if [ -f /usr/bin/apt-get ]
 then
 	apt-get update
-	apt-get install -y git
+	apt-get install -y wget curl git
 else
 	yum update -y
-	yum install -y git
+	yum install -y wget curl git
 fi
 
 git config --global credential.helper store --file
