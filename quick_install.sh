@@ -1,5 +1,9 @@
 #!/bin/bash
 
+pushd /etc
+ln -sf /usr/share/zoneinfo/Europe/Paris localtime
+popd
+
 if [ -f /usr/bin/apt-get ]
 then
 	apt-get update
@@ -7,6 +11,8 @@ then
 else
 	yum update -y
 	yum install -y wget curl git
+
+
 fi
 
 git config --global credential.helper store --file
