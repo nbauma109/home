@@ -1,0 +1,2 @@
+#!/bin/sh
+ps aux | grep denyhosts | grep foreground | grep -v grep | awk '{print $2}' | xargs kill
