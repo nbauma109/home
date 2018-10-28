@@ -1,0 +1,8 @@
+#!/bin/sh
+if [ -d /var/lock/subsys ]
+then
+    touch /var/lock/subsys/local
+fi
+csh -cf '/sbin/runsvdir-start &'
+
+exit 0
