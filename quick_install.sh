@@ -40,11 +40,11 @@ popd
 
 
 pushd r2d2
-./install.sh
+bash ./install.sh
 popd
 
 pushd idsrd
-./install.sh
+bash ./install.sh
 popd
 
 cat r2d2/r2d2.cron idsrd/idsrd.cron | crontab
