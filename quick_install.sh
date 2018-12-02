@@ -7,7 +7,10 @@ popd
 if [ -f /usr/bin/apt-get ]
 then
 	apt-get update
-	apt-get install -y wget curl git xvfb unzip libxrender1 libxtst6 libxi6 libhyphen0 csh curl g++ make psmisc default-jdk poppler-utils python python-ipaddr bzip2 fontconfig lynx firefox-esr
+	apt-get install -y apt-file
+	apt-file update
+	apt-file search firefox|cut -d: -f1|sort|uniq|grep -E "^(firefox|firefox-esr)$"|xargs apt-get install -y
+	apt-get install -y wget curl git xvfb unzip libxrender1 libxtst6 libxi6 libhyphen0 csh curl g++ make psmisc default-jdk poppler-utils python python-ipaddr bzip2 fontconfig lynx
 else
 	yum update -y
 	yum install -y redhat-lsb-core wget curl git dbus-x11 Xvfb unzip libXrender libXtst libXi csh curl gcc-c++ glibc-static make psmisc java-1.8.0-openjdk-devel poppler-utils python python-ipaddr bzip2 fontconfig lynx firefox
