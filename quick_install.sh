@@ -9,6 +9,7 @@ then
 	apt-get update
 	apt-get install -y apt-file
 	apt-file update
+	apt-get upgrade -y openssl
 	apt-file search firefox|cut -d: -f1|sort|uniq|grep -E "^(firefox|firefox-esr)$"|xargs apt-get install -y
 	apt-get install -y wget curl git xvfb unzip libxrender1 libxtst6 libxi6 libhyphen0 csh curl g++ make psmisc default-jdk poppler-utils python python-ipaddr bzip2 fontconfig lynx
 else
